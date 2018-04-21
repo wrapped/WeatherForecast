@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather Forecast</string>
+    <string name="conditions">Conditions:</string>
+    <string name="temperature">Temperature:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="wind">Wind:</string>
+    <string name="wind_direction">Wind Direction:</string>
+    <string name="select_a_city">Select a City</string>
+</resources>

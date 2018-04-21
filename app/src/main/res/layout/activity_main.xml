@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/selectCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_a_city"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="24dp" />
+
+            <Spinner
+                android:id="@+id/city_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/selectCity" >
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/cityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/tableResults"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+
+    <TableLayout
+        android:id="@+id/tableResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/conditionsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/conditions"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tempsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/temperature"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/temps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/humidityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/humidity"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/humid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/windTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="@string/wind"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/windData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/windDirTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="@string/wind_direction"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/windDir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
